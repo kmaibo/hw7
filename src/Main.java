@@ -52,7 +52,7 @@ public class Main {
             total2 += deposit2;
             total2 = total2 + (total2 * 7) / 100;
             if (month2 % 6 == 0) {
-                System.out.println("Месяц " + month2 + " накоплено " + total2 + " рублей");
+                System.out.println("Месяц " + month2 + " накоплено " + total2 + " рублей.");
             }
         }
         //task 7
