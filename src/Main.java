@@ -5,7 +5,6 @@ public class Main {
         int total = 0;
         int month = 0;
         while (total < 2_459_000) {
-            total = total + total / 100;
             total += deposit;
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
@@ -16,9 +15,11 @@ public class Main {
             i++;
             System.out.print(i + " ");
         }
+        System.out.println();
         for (; i >= 1; i--) {
             System.out.print(i + " ");
         }
+        System.out.println();
         //task 3
         int mortality = 8;
         int birthrate = 17;
@@ -30,18 +31,29 @@ public class Main {
             people = people + newBirth - deaths;
             System.out.println("Год " + years + ", численность населения составляет " + people);
         }
-        //task 4, 5
+        //task 4
         int deposit1 = 15000;
         int total1 = 0;
         int month1 = 0;
         while (total1 <= 12_000_000) {
+            month1++;
             total1 = total1 + (total1 * 7) / 100;
             total1 += deposit1;
-            month1++;
             System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей");
         }
-        if (month1 % 6 == 0) {
-            System.out.println("Месяц " + month1 + ", сумма накоплений равна " + total1 + " рублей");
+
+        //task 5
+        int deposit3 = 15000;
+        int total3 = 0;
+        int month3 = 0;
+        while (total3 <= 12_000_000) {
+            month3++;
+            total3 = total3 + (total3 * 7) / 100;
+            total3 += deposit3;
+            if (month3 % 6 == 0) {
+                System.out.println("Месяц " + month3 + " накоплено " + total3 + " рублей.");
+            }
+
         }
         //task 6
         int deposit2 = 15000;
